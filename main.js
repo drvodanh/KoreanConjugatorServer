@@ -41,7 +41,10 @@ app.get('/searchKor=:term', function(req, res) {
         res.redirect(CONJUGATE_ROUTE+stem);
     }else {
         var defCount = 0;
-        stemList.forEach(function(item, index, array) {
+        res.json(stemList);
+
+        // Uncomment this code if you're connecting a database
+        /*stemList.forEach(function(item, index, array) {
             database.searchKor(item.key,function(value){
                 stemList[index].def = value;
                 defCount++;
@@ -49,7 +52,7 @@ app.get('/searchKor=:term', function(req, res) {
                     res.json(stemList);
                 }
             })
-        });
+        });*/
     }
 });
 
