@@ -4,7 +4,7 @@ let database = require('./database');
 const express = require('express');
 const app = express();
 
-const server_port = process.env.SERVER_PORT || 3000;
+const server_port = 3000;
 const server_ip_address = process.env.SERVER_IP_ADDRESS || "localhost";
 const CONJUGATE_ROUTE = '/conjugate=';
 
