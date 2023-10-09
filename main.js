@@ -73,7 +73,7 @@ app.get('/defineEng=:term', function(req, res){
 });
 
 //server_ip_address
-app.listen(server_port, function() {
+app.listen(server_port,server_ip_address, function() {
     console.log('Listening on:'+server_ip_address+':'+server_port);
 });
 
