@@ -5,7 +5,7 @@ const express = require('express');
 const app = express();
 
 const server_port = 3000;
-const server_ip_address = process.env.SERVER_IP_ADDRESS || "localhost";
+const server_ip_address = "localhost";
 const CONJUGATE_ROUTE = '/conjugate=';
 
 app.get('/', function(req, res){
