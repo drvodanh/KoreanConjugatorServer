@@ -4,8 +4,8 @@ let database = require('./database');
 const express = require('express');
 const app = express();
 
-const server_port = 8080;
-const server_ip_address = '127.0.0.1';
+#const server_port = 8080;
+#const server_ip_address = '127.0.0.1';
 const CONJUGATE_ROUTE = '/conjugate=';
 
 app.get('/', function(req, res){
