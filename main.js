@@ -5,7 +5,7 @@ const express = require('express');
 const app = express();
 
 const server_port = 3000;
-const server_ip_address = "localhost";
+//const server_ip_address = "localhost";
 const CONJUGATE_ROUTE = '/conjugate=';
 
 app.get('/', function(req, res){
@@ -72,7 +72,8 @@ app.get('/defineEng=:term', function(req, res){
    })
 });
 
-app.listen(server_port,server_ip_address, function() {
+//server_ip_address
+app.listen(server_port, function() {
     console.log('Listening on:'+server_ip_address+':'+server_port);
 });
 
