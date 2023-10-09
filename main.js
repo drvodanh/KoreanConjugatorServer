@@ -5,7 +5,7 @@ const express = require('express');
 const app = express();
 
 const server_port = process.env.PORT || 3000
-const server_ip_address = process.env.CYCLIC_URL || 'http://localhost';
+const server_ip_address = 'http://localhost';
 const CONJUGATE_ROUTE = '/conjugate=';
 
 app.get('/', function(req, res){
