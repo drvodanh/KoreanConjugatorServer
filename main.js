@@ -6,11 +6,11 @@ const app = express();
 
 const server_port = 3000;
 const server_ip_address = "localhost";
-const CONJUGATE_ROUTE = '/conjugate=';
+const CONJUGATE_ROUTE = '/search=';
 
-app.get('/', function(req, res){
-    res.redirect(CONJUGATE_ROUTE + '하다');
-});
+//app.get('/', function(req, res){
+//    res.redirect(CONJUGATE_ROUTE + '하다');
+//});
 
 // Works for both conjugated and infinitive forms
 app.get(CONJUGATE_ROUTE+':term', function (req, res) {
