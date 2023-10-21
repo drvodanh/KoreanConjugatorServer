@@ -11,7 +11,9 @@ const CONJUGATE_ROUTE = '/search=';
 //app.get('/', function(req, res){
 //    res.redirect(CONJUGATE_ROUTE + '하다');
 //});
-
+app.get("/", function (req, res) {
+  res.render("hello"); // Render the "index.ejs" view
+});
 // Works for both conjugated and infinitive forms
 app.get(CONJUGATE_ROUTE+':term', function (req, res) {
     let term = req.params.term;
